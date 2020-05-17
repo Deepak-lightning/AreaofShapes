@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="AreaOfShapes">
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input label="Enter the sides of a Square" onchange={squarehandler}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input label="Enter the height of a rectangle" onchange={rectangleheighthandler}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input label="Enter the width of a rectangle" onchange={rectanglewidthhamdler}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input label="Enter the diagonal1 of a rohmbus" onchange={diagonal1hamdler}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input label="Enter the diagonal2 of a rohmbus" onchange={diagonal2hamdler}></lightning-input>
+            </lightning-layout-item>
+            <lightning-button-group>
+                <lightning-button label="AreaOfSquare" icon-position="right" onclick={areaOfsquare}></lightning-button>
+                <lightning-button label="AreaOfrectangle" icon-position="centre" onclick={areaOfrectangle}></lightning-button>
+                <lightning-button label="AreaOfrohmbus" icon-position="left"  onclick={areaOfrohmbus}></lightning-button>
+            </lightning-button-group>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-formatted-text value={currentoputput}></lightning-formatted-text>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+
+</template>
